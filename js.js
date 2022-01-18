@@ -1,0 +1,73 @@
+// class MyDate {
+//     constructor(day, month, year) {
+//         this.day=day;
+//         this.month=month;
+//         this.year=year;
+//     }
+//     getDay(){
+//         return this.day;
+//     }
+//     getMonth(){
+//         return this.month;
+//     }
+//     getYear(){
+//         return this.year;
+//     }
+//     setDay(day){
+//         this.day=day;
+//     }
+//     setMonth(month){
+//         this.month=month;
+//     }
+//     setYear(year){
+//         this.year=year;
+//     }
+// }
+let MyDate = function(day, month, year) {
+
+    this.day = day;
+
+    this.month = month;
+
+    this.year = year;
+
+
+this.getDay = function() {
+    return this.day;
+}
+this.getMonth = function() {
+    return this.month;
+}
+this.getYear = function() {
+    return this.year;
+}
+    this.setDay = function(day) {
+    this.day  = day;
+}
+    this.setMonth = function(month) {
+    this.month  = month;
+}
+    this.setYear = function(year) {
+    this.year  = year;
+}}
+let date = new MyDate(2, 2, 2007);
+let day = date.getDay(); // 2
+
+let month = date.getMonth(); // 2
+
+let year = date.getYear(); // 2007
+alert(day + "/" + month + "/" + year);
+date.setDay(10);
+date.setMonth(10);
+date.setYear(2019);
+alert(day + "/" + month + "/" + year);
+
+// let snAn = new MyDate(12,12,1991);
+// let day =snAn.getDay();
+// let month =snAn.getMonth();
+// let year =snAn.getYear();
+// alert(day + "/" + month + "/" + year);
+// snAn.setDay(10);
+// snAn.setMonth(10);
+// snAn.setYear(2019);
+// alert(day + "/" + month + "/" + year);
